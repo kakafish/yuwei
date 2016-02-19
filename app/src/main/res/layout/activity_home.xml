@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/home_fl"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/home_rg"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="@color/black">
+
+        <RadioButton
+            android:id="@+id/home_rb_recommend"
+            style="@style/home_radio_btn_style"
+            android:drawableTop="@drawable/selector_bottom_recommend"
+            android:text="@string/home_rb_recommend" />
+
+        <RadioButton
+            android:id="@+id/home_rb_world"
+            style="@style/home_radio_btn_style"
+            android:drawableTop="@drawable/selector_bottom_world"
+            android:text="@string/home_rb_world" />
+
+        <RadioButton
+            android:id="@+id/home_rb_moment"
+            style="@style/home_radio_btn_style"
+            android:drawableTop="@drawable/selector_bottom_moment"
+            android:text="@string/home_rb_moment" />
+
+        <RadioButton
+            android:id="@+id/home_rb_note"
+            style="@style/home_radio_btn_style"
+            android:drawableTop="@drawable/selector_bottom_note"
+            android:text="@string/home_rb_note" />
+
+        <RadioButton
+            android:id="@+id/home_rb_mine"
+            style="@style/home_radio_btn_style"
+            android:drawableTop="@drawable/selector_bottom_mine"
+            android:text="@string/home_rb_mine" />
+
+    </RadioGroup>
+
+</LinearLayout>

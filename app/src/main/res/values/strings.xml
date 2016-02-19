@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">余味</string>
+    <!--主页radiobutton-->
+    <string name="home_rb_recommend">推荐</string>
+    <string name="home_rb_world">全球</string>
+    <string name="home_rb_moment">一刻</string>
+    <string name="home_rb_note">食记</string>
+    <string name="home_rb_mine">我的</string>
+    
+    <!--主页菜单栏-->
+    <string name="recommend_fujin">附近</string>
+    <string name="recommend_dangdicai">当地菜</string>
+    <string name="recommend_tesexiaochi">特色小吃</string>
+    <string name="recommend_xicai">西餐</string>
+    <string name="recommend_kafeiguan">咖啡馆</string>
+    <string name="recommend_yirenshi">一人食</string>
+    <string name="recommend_shangwupinwei">商务品味</string>
+    <string name="recommend_yinshi">饮食男女</string>
+    <string name="recommend_qinzi">亲子美食</string>
+    <string name="recommend_zutuan">组团嗨吃</string>
+
+    <!--推荐-->
+    <string name="recommend_search_text">寻找你想去吃的地方</string>
+    
+    <string name="recommend_meiri_text">每日精选</string>
+    <string name="recommend_24hour_text">24小时的新鲜</string>
+
+    <string name="recommend_jijie_text">当季热门</string>
+    <string name="recommend_cike_text">此刻风味正好</string>
+    
+</resources>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+    <!--整体-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--头部图片区域-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@drawable/home_page_default">
+
+            <!--透明度变化的搜索框-->
+
+
+            <!--定位-->
+            <LinearLayout
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/dingwei_back"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/recommend_dingwei_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:paddingLeft="10dp"
+                    android:src="@drawable/home_location" />
+
+                <TextView
+                    android:id="@+id/recommend_dingwei_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="深圳"
+                    android:textColor="@color/white"
+                    android:textSize="10dp" />
+            </LinearLayout>
+
+            <!--滑动菜单栏-->
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="30dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        style="@style/fragment_recommend_caidanlan_btn"
+                        android:drawableTop="@drawable/kafei"
+                        android:text="@string/recommend_kafeiguan" />
+
+                    <Button
+                        style="@style/fragment_recommend_caidanlan_btn"
+                        android:drawableTop="@drawable/xiaochikuaican"
+                        android:text="@string/recommend_tesexiaochi" />
+
+                    <Button
+                        style="@style/fragment_recommend_caidanlan_btn"
+                        android:drawableTop="@drawable/dangdicai"
+                        android:text="@string/recommend_dangdicai" />
+
+                    <Button
+                        style="@style/fragment_recommend_caidanlan_btn"
+                        android:drawableTop="@drawable/fujin"
+                        android:text="@string/recommend_fujin" />
+
+                    <Button
+                        style="@style/fragment_recommend_caidanlan_btn"
+                        android:layout_width="0dp"
+                        android:drawableTop="@drawable/xican"
+                        android:text="@string/recommend_xicai" />
+
+
+                    <Button
+                        style="@style/fragment_recommend_caidanlan_btn"
+                        android:drawableTop="@drawable/yirenmeishi"
+                        android:text="@string/recommend_yirenshi" />
+
+                    <Button
+                        style="@style/fragment_recommend_caidanlan_btn"
+                        android:drawableTop="@drawable/shangwu"
+                        android:text="@string/recommend_shangwupinwei" />
+
+                    <Button
+                        style="@style/fragment_recommend_caidanlan_btn"
+                        android:drawableTop="@drawable/qinglv"
+                        android:text="@string/recommend_yinshi" />
+
+
+                    <Button
+                        style="@style/fragment_recommend_caidanlan_btn"
+                        android:drawableTop="@drawable/jiatingjucan"
+                        android:text="@string/recommend_qinzi" />
+
+                    <Button
+                        style="@style/fragment_recommend_caidanlan_btn"
+                        android:drawableTop="@drawable/pengyou"
+                        android:text="@string/recommend_zutuan" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+            <!--搜索框-->
+            <TextView
+                android:id="@+id/recommend_search_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/home_search_bg"
+                android:clickable="true"
+                android:drawableLeft="@drawable/icon_search_home"
+                android:drawablePadding="20dp"
+                android:paddingLeft="20dp"
+                android:text="@string/recommend_search_text"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <!--每日精选-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@drawable/home_bg"
+            android:orientation="vertical"
+            android:onClick="onEveryday">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/home_orange_di"
+                android:paddingLeft="8dp"
+                android:paddingTop="8dp"
+                android:text="@string/recommend_meiri_text"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:text="@string/recommend_24hour_text"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/home_bg_title"
+                />
+
+        </LinearLayout>
+
+        <!--当季热门-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@drawable/home_bg"
+            android:orientation="vertical"
+            android:onClick="onEveryday">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/home_orange_di"
+                android:paddingLeft="8dp"
+                android:paddingTop="8dp"
+                android:text="@string/recommend_jijie_text"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:text="@string/recommend_cike_text"
+                android:textSize="12sp" />
+
+            <!--android:numColumns="auto_fit" ，GridView的列数设置为自动
+                android:columnWidth="90dp"，每列的宽度，也就是Item的宽度
+                android:stretchMode="columnWidth"，缩放与列宽大小同步
+                android:verticalSpacing="10dp"，两行之间的边距，如：行一(NO.0~NO.2)与行二(NO.3~NO.5)间距为10dp
+                android:horizontalSpacing="10dp"，两列之间的边距。-->
+            <GridView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingTop="10dp"
+                android:numColumns="auto_fit"
+                android:verticalSpacing="10dp"
+                android:horizontalSpacing="10dp"
+                android:columnWidth="90dp"
+                android:stretchMode="columnWidth"
+                android:gravity="center" ></GridView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>
